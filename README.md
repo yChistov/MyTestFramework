@@ -1,4 +1,5 @@
-# MyTestFramework (Java + Selenide + TestNG + Allure + Selenoid)
+# MyTestFramework 
+(Java + Selenide + TestNG + Allure + Selenoid)
 
 Run test - mvn test -Dbrowser=chrome 
 
