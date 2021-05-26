@@ -1,6 +1,8 @@
 package com.mystore.helpers;
 
-import com.codeborne.selenide.*;
+import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.WebDriverRunner;
 import com.mystore.app.AppConfig;
 import com.mystore.core.SelenoidDriverProvider;
 import org.apache.commons.io.FileUtils;
@@ -25,24 +27,8 @@ public class Driver {
     Configuration.browserSize = "1920x1080";
     Configuration.holdBrowserOpen = false;
     Configuration.screenshots = false;
-
-    if (TestConfig.isHeadless()) {
-      Configuration.headless = true;
-    } else {
-      Configuration.headless = false;
-    }
-
-    switch (TestConfig.browser) {
-      case "chrome":
-        Configuration.browser = SelenoidDriverProvider.class.getName();
-        break;
-      case "firefox":
-        Configuration.browser = Browsers.FIREFOX;
-        break;
-      default:
-        Configuration.browser = Browsers.CHROME;
-        break;
-    }
+    Configuration.headless = TestConfig.isHeadless();
+    Configuration.browser = SelenoidDriverProvider.class.getName();
   }
 
   public static WebDriver currentDriver() {

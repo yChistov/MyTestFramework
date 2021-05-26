@@ -1,6 +1,7 @@
 package com.mystore.core;
 
 import com.codeborne.selenide.WebDriverProvider;
+import com.mystore.helpers.TestConfig;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -17,18 +18,34 @@ public class SelenoidDriverProvider implements WebDriverProvider {
   @Nonnull
   @Override
   public WebDriver createDriver(@Nonnull DesiredCapabilities desiredCapabilities) {
+    DesiredCapabilities capabilities = new DesiredCapabilities();
     Map<String, Object> prefs = new HashMap<>();
-    prefs.put("profile.default_content_setting_values.notifications", 2);
-    ChromeOptions options = new ChromeOptions();
-    options.setExperimentalOption("prefs", prefs);
-    DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-    capabilities.setCapability("browserVersion", "90.0");
+    switch (TestConfig.browser) {
+      case "chrome":
+        prefs.put("profile.default_content_setting_values.notifications", 2);
+        ChromeOptions options = new ChromeOptions();
+        options.setExperimentalOption("prefs", prefs);
+        capabilities.setCapability("browserName", "chrome");
+        capabilities.setCapability("browserVersion", "90.0");
+        capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+        break;
+      case "firefox":
+        capabilities.setCapability("browserName", "firefox");
+        capabilities.setCapability("browserVersion", "88.0");
+        break;
+      case "opera":
+        capabilities.setCapability("browserName", "opera");
+        capabilities.setCapability("browserVersion", "76.0");
+      default:
+        capabilities.setCapability("browserName", "chrome");
+        capabilities.setCapability("browserVersion", "90.0");
+        break;
+    }
     capabilities.setCapability(
         "selenoid:options",
         Map.<String, Object>of(
             "enableVNC", true,
             "enableVideo", true));
-    capabilities.setCapability(ChromeOptions.CAPABILITY, options);
     try {
       return new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
     } catch (final MalformedURLException e) {
