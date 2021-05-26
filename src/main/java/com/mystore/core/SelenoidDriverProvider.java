@@ -36,6 +36,7 @@ public class SelenoidDriverProvider implements WebDriverProvider {
       case "opera":
         capabilities.setCapability("browserName", "opera");
         capabilities.setCapability("browserVersion", "76.0");
+        break;
       default:
         capabilities.setCapability("browserName", "chrome");
         capabilities.setCapability("browserVersion", "90.0");
