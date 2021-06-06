@@ -3,18 +3,23 @@ package com.mystore.tests;
 import org.testng.annotations.Test;
 
 public class MyTest extends BaseTest {
+  private static final String WELCOME_TEXT =
+      "Welcome to the Secure Area. When you are done click logout below.";
 
   @Test
-  void ableToRunDefaultDriverOnSelenoid() {
+  public void loginTest() {
     app.loginPage.open();
+    logger.info("loginTest start");
     app.loginPage.login("tomsmith", "SuperSecretPassword!");
+    softAssert.assertEquals(app.loginPage.getWelcomeText(), WELCOME_TEXT);
+  }
 
-    logger.info("Sample info message");
-    logger.warn("Sample warn message");
-    logger.error("Sample error message");
-    logger.fatal("Sample fatal message");
-
-    softAssert.assertEquals(2, 2);
-    softAssert.assertAll();
+  @Test
+  public void deleteButtonTest() {
+    app.addAndRemovePage.open();
+    logger.info("deleteButtonTest start");
+    app.addAndRemovePage.clickOnAddButton(3);
+    app.addAndRemovePage.clickOnDeleteButton();
+    softAssert.assertEquals(app.addAndRemovePage.getDeleteElementsSize(), 0);
   }
 }

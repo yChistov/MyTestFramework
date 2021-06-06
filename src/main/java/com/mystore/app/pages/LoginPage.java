@@ -7,9 +7,10 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class LoginPage extends BasePage {
 
-  public SelenideElement loginField = $("#username");
-  public SelenideElement passwordField = $("#password");
-  public SelenideElement signInButton = $(".radius");
+  private SelenideElement loginField = $("#username");
+  private SelenideElement passwordField = $("#password");
+  private SelenideElement signInButton = $(".radius");
+  private SelenideElement welcomeText = $(".subheader");
 
   public LoginPage(String pageUrl) {
     super(pageUrl);
@@ -20,5 +21,9 @@ public class LoginPage extends BasePage {
     passwordField.setValue(password);
     signInButton.click();
     Driver.waitForUrlContains("secure");
+  }
+
+  public String getWelcomeText() {
+    return welcomeText.getText();
   }
 }
