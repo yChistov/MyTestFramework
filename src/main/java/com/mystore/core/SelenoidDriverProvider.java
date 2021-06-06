@@ -48,7 +48,7 @@ public class SelenoidDriverProvider implements WebDriverProvider {
             "enableVNC", true,
             "enableVideo", true));
     try {
-      return new RemoteWebDriver(new URL("http://172.17.0.2:4444/wd/hub"), capabilities);
+      return new RemoteWebDriver(new URL("http://172.18.0.1:4444/wd/hub"), capabilities);
     } catch (final MalformedURLException e) {
       throw new RuntimeException("Unable to create driver", e);
     }
