@@ -1,7 +1,9 @@
 package com.mystore.tests;
 
+import com.codeborne.selenide.logevents.SelenideLogger;
 import com.mystore.app.App;
 import com.mystore.helpers.Driver;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
@@ -23,6 +25,8 @@ public class BaseTest {
     softAssert = new SoftAssert();
     logger = LogManager.getLogger("");
     DOMConfigurator.configure("src/main/resources/log4j.xml");
+    SelenideLogger.addListener(
+        "AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
   }
 
   @AfterMethod
