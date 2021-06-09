@@ -4,6 +4,7 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
 import com.mystore.app.AppConfig;
+import com.mystore.core.LocalDriverProvider;
 import com.mystore.core.SelenoidDriverProvider;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -19,8 +20,8 @@ import java.util.Date;
 import java.util.List;
 
 public class Driver {
-  public static void initDriver() {
 
+  public static void initDriver() {
     TestConfig.initConfig();
     Configuration.driverManagerEnabled = false;
     Configuration.pageLoadStrategy = "eager";
@@ -28,7 +29,14 @@ public class Driver {
     Configuration.holdBrowserOpen = false;
     Configuration.screenshots = false;
     Configuration.headless = TestConfig.isHeadless();
-    Configuration.browser = SelenoidDriverProvider.class.getName();
+    switch (TestConfig.environment) {
+      case "local":
+        Configuration.browser = LocalDriverProvider.class.getName();
+        break;
+      case "docker":
+        Configuration.browser = SelenoidDriverProvider.class.getName();
+        break;
+    }
   }
 
   public static WebDriver currentDriver() {

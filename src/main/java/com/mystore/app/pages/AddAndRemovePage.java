@@ -3,6 +3,8 @@ package com.mystore.app.pages;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 
+import java.util.stream.IntStream;
+
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
@@ -16,9 +18,11 @@ public class AddAndRemovePage extends BasePage {
   }
 
   public void clickOnAddButton(int number) {
-    for (int i = 0; i < number; i++) {
-      addElementBtn.click();
-    }
+    IntStream.range(0, number)
+        .forEach(
+            i -> {
+              addElementBtn.click();
+            });
   }
 
   public void clickOnDeleteButton() {

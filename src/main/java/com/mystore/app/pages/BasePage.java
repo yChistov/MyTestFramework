@@ -4,6 +4,8 @@ import com.codeborne.selenide.Selenide;
 import com.mystore.app.AppConfig;
 import com.mystore.helpers.Trim;
 
+import static com.mystore.helpers.Driver.maximize;
+
 public abstract class BasePage {
   protected String pageUrl;
 
@@ -14,5 +16,6 @@ public abstract class BasePage {
   public void open() {
     String url = Trim.rtrim(AppConfig.baseUrl, "/") + "/" + Trim.ltrim(pageUrl, "/");
     Selenide.open(url);
+    maximize();
   }
 }
