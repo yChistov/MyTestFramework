@@ -7,6 +7,9 @@ public class MyTest extends BaseTest {
   private static final String WELCOME_TEXT =
       "Welcome to the Secure Area. When you are done click logout below.";
 
+  private static final String BASIC_AUTH =
+      "Congratulations! You must have the proper credentials.";
+
   @Step
   @Test
   public void loginTest() {
@@ -24,5 +27,13 @@ public class MyTest extends BaseTest {
     app.addAndRemovePage.clickOnAddButton(3);
     app.addAndRemovePage.clickOnDeleteButton();
     softAssert.assertEquals(app.addAndRemovePage.getDeleteElementsSize(), 0);
+  }
+
+  @Step
+  @Test
+  public void alertLoginTest() {
+    app.basicAuthPage.open("admin", "admin");
+    logger.info("basicAuthPage start");
+    softAssert.assertEquals(app.basicAuthPage.getBasicAuth(), BASIC_AUTH);
   }
 }

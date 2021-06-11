@@ -18,4 +18,11 @@ public abstract class BasePage {
     Selenide.open(url);
     maximize();
   }
+
+  public void open(String username, String password) {
+    String auth = username + ":" + password + "@";
+    String authUrl = "http://" +  auth + Trim.ltrim(AppConfig.baseUrl, "http://") + "/" + Trim.ltrim(pageUrl, "/");
+    Selenide.open(authUrl);
+    maximize();
+  }
 }
