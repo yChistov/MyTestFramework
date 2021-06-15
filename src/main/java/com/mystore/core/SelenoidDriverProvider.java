@@ -26,12 +26,12 @@ public class SelenoidDriverProvider implements WebDriverProvider {
         ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("prefs", prefs);
         capabilities.setCapability("browserName", "chrome");
-        capabilities.setCapability("browserVersion", "90.0");
+        capabilities.setCapability("browserVersion", "91.0");
         capabilities.setCapability(ChromeOptions.CAPABILITY, options);
         break;
       case "firefox":
         capabilities.setCapability("browserName", "firefox");
-        capabilities.setCapability("browserVersion", "88.0");
+        capabilities.setCapability("browserVersion", "89.0");
         break;
       case "opera":
         capabilities.setCapability("browserName", "opera");

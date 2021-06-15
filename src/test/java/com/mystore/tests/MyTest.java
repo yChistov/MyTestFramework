@@ -31,7 +31,7 @@ public class MyTest extends BaseTest {
 
   @Step
   @Test
-  public void alertLoginTest() {
+  public void basicAuthTest() {
     app.basicAuthPage.open("admin", "admin");
     logger.info("basicAuthPage start");
     softAssert.assertEquals(app.basicAuthPage.getBasicAuth(), BASIC_AUTH);
