@@ -2,7 +2,6 @@ package com.mystore.tests;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
 import com.mystore.app.App;
-import com.mystore.helpers.Driver;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -12,6 +11,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.asserts.SoftAssert;
 
+import static com.mystore.helpers.Driver.*;
+
 public class BaseTest {
 
   protected App app;
@@ -20,7 +21,7 @@ public class BaseTest {
 
   @BeforeClass
   public void setUp() {
-    Driver.initDriver();
+    initDriver();
     app = new App();
     softAssert = new SoftAssert();
     logger = LogManager.getLogger("");
@@ -31,11 +32,11 @@ public class BaseTest {
 
   @AfterMethod
   public void clearCookies() {
-    Driver.clearCookies();
+    clearAllCookies();
   }
 
   @AfterClass
   public void tearDown() {
-    Driver.close();
+    close();
   }
 }

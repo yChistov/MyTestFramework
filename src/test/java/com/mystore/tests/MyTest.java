@@ -7,8 +7,7 @@ public class MyTest extends BaseTest {
   private static final String WELCOME_TEXT =
       "Welcome to the Secure Area. When you are done click logout below.";
 
-  private static final String BASIC_AUTH =
-      "Congratulations! You must have the proper credentials.";
+  private static final String BASIC_AUTH = "Congratulations! You must have the proper credentials.";
 
   @Step
   @Test
@@ -43,6 +42,6 @@ public class MyTest extends BaseTest {
     app.dropDownPage.open();
     logger.info("dropDownPage start");
     app.dropDownPage.selectOptionByValue("Option 1");
-    softAssert.assertTrue( app.dropDownPage.isSelected());
+    softAssert.assertTrue(app.dropDownPage.isSelected());
   }
 }

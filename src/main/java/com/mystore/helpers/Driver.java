@@ -81,7 +81,7 @@ public class Driver {
     currentDriver().manage().window().setSize(new Dimension(width, height));
   }
 
-  public static void clearCookies() {
+  public static void clearAllCookies() {
     open(AppConfig.baseUrl);
     Selenide.clearBrowserCookies();
     Selenide.clearBrowserLocalStorage();

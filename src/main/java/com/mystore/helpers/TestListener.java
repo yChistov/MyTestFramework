@@ -1,4 +1,4 @@
-package com.mystore.tests;
+package com.mystore.helpers;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;

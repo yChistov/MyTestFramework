@@ -3,7 +3,7 @@
 <suite name="SelenideAutoTests" verbose="1">
 
     <listeners>
-        <listener class-name="com.mystore.tests.TestListener"/>
+        <listener class-name="com.mystore.helpers.TestListener"/>
     </listeners>
 
     <test name="Tests">
