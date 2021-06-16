@@ -36,4 +36,13 @@ public class MyTest extends BaseTest {
     logger.info("basicAuthPage start");
     softAssert.assertEquals(app.basicAuthPage.getBasicAuth(), BASIC_AUTH);
   }
+
+  @Step
+  @Test
+  public void dropDownTest() {
+    app.dropDownPage.open();
+    logger.info("dropDownPage start");
+    app.dropDownPage.selectOptionByValue("Option 1");
+    softAssert.assertTrue( app.dropDownPage.isSelected());
+  }
 }
