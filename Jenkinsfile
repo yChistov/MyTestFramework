@@ -5,7 +5,7 @@ pipeline {
 		stage("Build") {
 			steps {
 				sh "mvn -version"
-				sh "mvn clean install -Dbrowser=chrome -Denvironment=docker"
+				sh "mvn clean install"
 			}
 		}
 	}
