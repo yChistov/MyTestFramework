@@ -27,7 +27,7 @@ public class Driver {
     Configuration.pageLoadStrategy = "eager";
     Configuration.startMaximized = true;
     Configuration.holdBrowserOpen = false;
-    Configuration.screenshots = true;
+    Configuration.screenshots = false;
     Configuration.headless = TestConfig.isHeadless();
     switch (TestConfig.environment) {
       case "local":

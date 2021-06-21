@@ -1,10 +1,15 @@
 package com.mystore.helpers;
 
+import io.qameta.allure.Attachment;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+
+import static com.mystore.helpers.Driver.currentDriver;
 
 public class TestListener implements ITestListener {
 
@@ -23,6 +28,7 @@ public class TestListener implements ITestListener {
   @Override
   public void onTestFailure(ITestResult TestResult) {
     logger.info("Failed because of - " + TestResult.getThrowable());
+    screenshot();
   }
 
   @Override
@@ -41,5 +47,10 @@ public class TestListener implements ITestListener {
   @Override
   public void onFinish(ITestContext TestContext) {
     logger.info("=========== Finish: " + TestContext.getName() + " ===============");
+  }
+
+  @Attachment(type = "image/png")
+  public byte[] screenshot() {
+    return ((TakesScreenshot) currentDriver()).getScreenshotAs(OutputType.BYTES);
   }
 }

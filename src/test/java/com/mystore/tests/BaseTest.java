@@ -29,7 +29,7 @@ public class BaseTest {
     DOMConfigurator.configure("src/main/resources/log4j.xml");
     PropertyConfigurator.configure("src/main/resources/log4j.properties");
     SelenideLogger.addListener(
-        "AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
+        "AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(false));
   }
 
   @AfterMethod
