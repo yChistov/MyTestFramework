@@ -12,6 +12,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.asserts.SoftAssert;
 
+import java.io.IOException;
+
 import static com.mystore.helpers.Driver.*;
 
 public class BaseTest {
