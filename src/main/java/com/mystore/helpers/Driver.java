@@ -25,9 +25,9 @@ public class Driver {
     TestConfig.initConfig();
     Configuration.driverManagerEnabled = false;
     Configuration.pageLoadStrategy = "eager";
-    Configuration.browserSize = "1920x1080";
+    Configuration.startMaximized = true;
     Configuration.holdBrowserOpen = false;
-    Configuration.screenshots = false;
+    Configuration.screenshots = true;
     Configuration.headless = TestConfig.isHeadless();
     switch (TestConfig.environment) {
       case "local":

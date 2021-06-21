@@ -1,47 +1,49 @@
 package com.mystore.tests;
 
+import com.mystore.helpers.TestListener;
 import io.qameta.allure.Step;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.assertEquals;
+
+@Listeners(TestListener.class)
 public class MyTest extends BaseTest {
   private static final String WELCOME_TEXT =
       "Welcome to the Secure Area. When you are done click logout below.";
-
   private static final String BASIC_AUTH = "Congratulations! You must have the proper credentials.";
+  private static final String VALUE_OPTION = "Option 1";
+  private static final int NUMBER_OF_BUTTON_CLICKS = 5;
 
   @Step
   @Test
   public void loginTest() {
     app.loginPage.open();
-    logger.info("loginTest start");
     app.loginPage.login("tomsmith", "SuperSecretPassword!");
-    softAssert.assertEquals(app.loginPage.getWelcomeText(), WELCOME_TEXT);
+    assertEquals(app.loginPage.getWelcomeText(), WELCOME_TEXT);
   }
 
   @Step
   @Test
   public void deleteButtonTest() {
     app.addAndRemovePage.open();
-    logger.info("deleteButtonTest start");
-    app.addAndRemovePage.clickOnAddButton(3);
+    app.addAndRemovePage.clickOnAddButton(NUMBER_OF_BUTTON_CLICKS);
     app.addAndRemovePage.clickOnDeleteButton();
-    softAssert.assertEquals(app.addAndRemovePage.getDeleteElementsSize(), 0);
+    assertEquals(app.addAndRemovePage.getDeleteElementsSize(), 0);
   }
 
   @Step
   @Test
   public void basicAuthTest() {
     app.basicAuthPage.open("admin", "admin");
-    logger.info("basicAuthPage start");
-    softAssert.assertEquals(app.basicAuthPage.getBasicAuth(), BASIC_AUTH);
+    assertEquals(app.basicAuthPage.getBasicAuth(), BASIC_AUTH);
   }
 
   @Step
   @Test
   public void dropDownTest() {
     app.dropDownPage.open();
-    logger.info("dropDownPage start");
-    app.dropDownPage.selectOptionByValue("Option 1");
-    softAssert.assertTrue(app.dropDownPage.isSelected());
+    app.dropDownPage.selectOptionByValue(VALUE_OPTION);
+    assertEquals(app.dropDownPage.getText(), VALUE_OPTION);
   }
 }

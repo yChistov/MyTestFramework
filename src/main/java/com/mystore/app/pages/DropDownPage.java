@@ -17,7 +17,7 @@ public class DropDownPage extends BasePage {
     dropDown.selectOption(value);
   }
 
-  public Boolean isSelected() {
-    return dropDown.isSelected();
+  public String getText() {
+    return dropDown.getText();
   }
 }

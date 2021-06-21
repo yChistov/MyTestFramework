@@ -3,17 +3,20 @@
 <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
     <appender name="fileAppender" class="org.apache.log4j.FileAppender">
         <param name="Threshold" value="INFO"/>
-        <!-- FILENAME AND LOCATION -->
         <param name="File" value="test-output/TestLog.log"/>
         <layout class="org.apache.log4j.PatternLayout">
-            <!-- DEFINE OUTPUT FORMAT -->
-            <!--            <param name="ConversionPattern" value="%d %-5p [%c{1}] %m %n" />-->
             <param name="ConversionPattern" value="%d %-5p %m %n"/>
-
+        </layout>
+    </appender>
+    <appender name="consoleAppender" class="org.apache.log4j.ConsoleAppender">
+        <param name="Threshold" value="INFO"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p %m %n"/>
         </layout>
     </appender>
     <root>
         <level value="INFO"/>
         <appender-ref ref="fileAppender"/>
+        <appender-ref ref="consoleAppender"/>
     </root>
 </log4j:configuration>
