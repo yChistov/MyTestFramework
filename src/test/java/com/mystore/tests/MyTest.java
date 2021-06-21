@@ -1,6 +1,7 @@
 package com.mystore.tests;
 
 import com.mystore.helpers.TestListener;
+import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -17,6 +18,7 @@ public class MyTest extends BaseTest {
 
   @Step
   @Test
+  @Description(value = "Login with correct credentials")
   public void loginTest() {
     app.loginPage.open();
     app.loginPage.login("tomsmith", "SuperSecretPassword!");
@@ -25,6 +27,7 @@ public class MyTest extends BaseTest {
 
   @Step
   @Test
+  @Description(value = "Added and deleted new button")
   public void deleteButtonTest() {
     app.addAndRemovePage.open();
     app.addAndRemovePage.clickOnAddButton(NUMBER_OF_BUTTON_CLICKS);
@@ -34,6 +37,7 @@ public class MyTest extends BaseTest {
 
   @Step
   @Test
+  @Description(value = "Login with correct credentials into url")
   public void basicAuthTest() {
     app.basicAuthPage.open("admin", "admin");
     assertEquals(app.basicAuthPage.getBasicAuth(), BASIC_AUTH);
@@ -41,6 +45,7 @@ public class MyTest extends BaseTest {
 
   @Step
   @Test
+  @Description(value = "Chose option into dropdown")
   public void dropDownTest() {
     app.dropDownPage.open();
     app.dropDownPage.selectOptionByValue(VALUE_OPTION);
