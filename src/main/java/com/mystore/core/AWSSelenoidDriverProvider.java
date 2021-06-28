@@ -24,6 +24,7 @@ public class AWSSelenoidDriverProvider implements WebDriverProvider {
       case "chrome":
         prefs.put("profile.default_content_setting_values.notifications", 2);
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
         options.setExperimentalOption("prefs", prefs);
         capabilities.setCapability("browserName", "chrome");
         capabilities.setCapability("browserVersion", "91.0");
