@@ -15,6 +15,7 @@ public class MyTest extends BaseTest {
   private static final String BASIC_AUTH = "Congratulations! You must have the proper credentials.";
   private static final String VALUE_OPTION = "Option 1";
   private static final int NUMBER_OF_BUTTON_CLICKS = 5;
+  private static final String SOME_TEXT = "Let's have some different text!";
 
   @Step
   @Test
@@ -50,5 +51,13 @@ public class MyTest extends BaseTest {
     app.dropDownPage.open();
     app.dropDownPage.selectOptionByValue(VALUE_OPTION);
     assertEquals(app.dropDownPage.getText(), VALUE_OPTION);
+  }
+
+  @Step
+  @Test
+  @Description(value = "Chose option into dropdown")
+  public void shadowDoomTest() {
+    app.shadowDomPage.open();
+    assertEquals(app.shadowDomPage.getElement(), SOME_TEXT);
   }
 }

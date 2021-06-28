@@ -2,8 +2,10 @@ package com.mystore.helpers;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
 import com.mystore.app.AppConfig;
+import com.mystore.core.AWSSelenoidDriverProvider;
 import com.mystore.core.LocalDriverProvider;
 import com.mystore.core.SelenoidDriverProvider;
 import io.qameta.allure.Attachment;
@@ -14,6 +16,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
+
+import static com.codeborne.selenide.Selenide.$;
 
 public class Driver {
 
@@ -31,6 +35,9 @@ public class Driver {
         break;
       case "docker":
         Configuration.browser = SelenoidDriverProvider.class.getName();
+        break;
+      case "aws":
+        Configuration.browser = AWSSelenoidDriverProvider.class.getName();
         break;
     }
   }
@@ -118,5 +125,18 @@ public class Driver {
   @Attachment(type = "image/png")
   public static byte[] screenshot() {
     return ((TakesScreenshot) currentDriver()).getScreenshotAs(OutputType.BYTES);
+  }
+
+  public static SelenideElement expandRootElement(SelenideElement element) {
+    WebElement rootElement = Selenide.executeJavaScript("return arguments[0].shadowRoot", element);
+    return $(rootElement);
+  }
+
+  public static WebElement expandElement(WebElement element) {
+    WebElement ele =
+        (WebElement)
+            ((JavascriptExecutor) currentDriver())
+                .executeScript("return arguments[0].shadowRoot", element);
+    return ele;
   }
 }

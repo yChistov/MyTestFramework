@@ -1,9 +1,6 @@
 package com.mystore.app;
 
-import com.mystore.app.pages.AddAndRemovePage;
-import com.mystore.app.pages.BasicAuthPage;
-import com.mystore.app.pages.DropDownPage;
-import com.mystore.app.pages.LoginPage;
+import com.mystore.app.pages.*;
 
 public class PageBuilder {
 
@@ -21,5 +18,9 @@ public class PageBuilder {
 
   public static DropDownPage buildDropDownPage() {
     return new DropDownPage("/dropdown");
+  }
+
+  public static ShadowDomPage buildShadowDomPage() {
+    return new ShadowDomPage("/shadowdom");
   }
 }
