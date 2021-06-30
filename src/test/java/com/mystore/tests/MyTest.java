@@ -15,10 +15,10 @@ public class MyTest extends BaseTest {
   private static final String BASIC_AUTH = "Congratulations! You must have the proper credentials.";
   private static final String VALUE_OPTION = "Option 1";
   private static final int NUMBER_OF_BUTTON_CLICKS = 5;
-  private static final String SOME_TEXT = "Let's have some different text!";
+  private static final String SOME_TEXT = "My default text";
 
   @Step
-  @Test
+  @Test(priority = 1)
   @Description(value = "Login with correct credentials")
   public void loginTest() {
     app.loginPage.open();
@@ -27,7 +27,7 @@ public class MyTest extends BaseTest {
   }
 
   @Step
-  @Test
+  @Test(priority = 2)
   @Description(value = "Added and deleted new button")
   public void deleteButtonTest() {
     app.addAndRemovePage.open();
@@ -37,7 +37,7 @@ public class MyTest extends BaseTest {
   }
 
   @Step
-  @Test
+  @Test(priority = 3)
   @Description(value = "Login with correct credentials into url")
   public void basicAuthTest() {
     app.basicAuthPage.open("admin", "admin");
@@ -45,7 +45,7 @@ public class MyTest extends BaseTest {
   }
 
   @Step
-  @Test
+  @Test(priority = 4)
   @Description(value = "Chose option into dropdown")
   public void dropDownTest() {
     app.dropDownPage.open();
@@ -54,10 +54,10 @@ public class MyTest extends BaseTest {
   }
 
   @Step
-  @Test
-  @Description(value = "Chose option into dropdown")
+  @Test(priority = 5)
+  @Description(value = "Shadow DOM check")
   public void shadowDoomTest() {
     app.shadowDomPage.open();
-    assertEquals(app.shadowDomPage.getElement(), SOME_TEXT);
+    assertEquals(app.shadowDomPage.getText(), SOME_TEXT);
   }
 }
