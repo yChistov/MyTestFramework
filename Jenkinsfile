@@ -3,9 +3,11 @@ pipeline {
 
 	stages {
 		stage("Build") {
-			steps {
-				sh "mvn clean install ${browser} ${environment}"
-			}
+		    steps {
+			    withMaven(maven: 'mvn') {
+				    sh "mvn clean install ${browser} ${environment}"
+			    }
+		    }
 		}
 	}
 
