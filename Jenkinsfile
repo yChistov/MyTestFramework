@@ -5,7 +5,7 @@ pipeline {
 		stage("Build") {
 		    steps {
 			    withMaven(maven: 'mvn') {
-				    sh "mvn clean install ${browser} ${environment}"
+				    sh "mvn clean install -Dbrowser=${browser} -Denvironment=${environment}"
 			    }
 		    }
 		}
