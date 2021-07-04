@@ -1,22 +1,14 @@
 pipeline {
-
 	agent any
-
-        tools {
-            jdk "openjdk-11"
-        }
-
 	stages {
-		stage("Build") {
+		stage('Build') {
 		    steps {
-		        sh 'java -version'
 			    withMaven(maven: 'mvn') {
 				    sh "mvn clean install -Dbrowser=${browser} -Denvironment=${environment}"
 			    }
 		    }
 		}
 	}
-
 	post {
 		always {
 			cleanWs()
