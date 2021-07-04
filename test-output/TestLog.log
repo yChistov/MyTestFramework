@@ -1,0 +1,451 @@
+2021-06-26 19:57:37,711 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-26 19:57:38,008 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-06-26 19:57:49,449 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2021-06-26 19:57:51,372 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-06-26 19:57:53,699 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-06-26 19:57:55,472 [main]   onTestStart - dropDownTest Started
+[INFO] 2021-06-26 19:57:57,313 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2021-06-26 19:57:59,153 [main]   onTestStart - loginTest Started
+[INFO] 2021-06-26 19:58:06,285 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-06-26 19:58:08,082 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-26 19:58:14,048 [main]   onTestFailure - Failed because of - Element not found {#shadow-host -> span}
+Expected: exist
+Page source: file:/D:/JavaProjects/MyTestFramework/build/reports/tests/1624726693864.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: Cannot locate an element span in shadow roots #shadow-host
+[INFO] 2021-06-26 19:58:16,211 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-26 19:59:09,836 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-26 19:59:10,128 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-06-26 19:59:20,252 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2021-06-26 19:59:22,153 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-06-26 19:59:24,375 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-06-26 19:59:26,171 [main]   onTestStart - dropDownTest Started
+[INFO] 2021-06-26 19:59:28,003 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2021-06-26 19:59:29,695 [main]   onTestStart - loginTest Started
+[INFO] 2021-06-26 19:59:36,593 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-06-26 19:59:38,128 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-26 19:59:44,181 [main]   onTestFailure - Failed because of - Element not found {#shadow-root -> span}
+Expected: exist
+Page source: file:/D:/JavaProjects/MyTestFramework/build/reports/tests/1624726783970.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: Cannot locate an element span in shadow roots #shadow-root
+[INFO] 2021-06-26 19:59:46,423 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-26 20:28:56,707 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-26 20:28:57,030 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-06-26 20:29:09,045 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2021-06-26 20:29:10,978 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-06-26 20:29:13,294 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-06-26 20:29:15,292 [main]   onTestStart - dropDownTest Started
+[INFO] 2021-06-26 20:29:17,266 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2021-06-26 20:29:19,266 [main]   onTestStart - loginTest Started
+[INFO] 2021-06-26 20:29:27,181 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-06-26 20:29:29,196 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-26 20:29:35,289 [main]   onTestFailure - Failed because of - Element not found {#shadow-host -> #inner-shadow-host -> span}
+Expected: exist
+Page source: file:/D:/JavaProjects/MyTestFramework/build/reports/tests/1624728575093.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: Cannot locate an element span in shadow roots #shadow-host -> #inner-shadow-host
+[INFO] 2021-06-26 20:29:37,529 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-26 20:30:37,819 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-26 20:30:38,127 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-06-26 20:30:50,841 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2021-06-26 20:30:52,852 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-06-26 20:30:55,203 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-06-26 20:30:57,314 [main]   onTestStart - dropDownTest Started
+[INFO] 2021-06-26 20:30:59,326 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2021-06-26 20:31:01,233 [main]   onTestStart - loginTest Started
+[INFO] 2021-06-26 20:31:08,864 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-06-26 20:31:10,715 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-26 20:31:16,737 [main]   onTestFailure - Failed because of - Element not found {#shadow-host -> #inner-shadow-host -> span}
+Expected: exist
+Page source: file:/D:/JavaProjects/MyTestFramework/build/reports/tests/1624728676539.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: Cannot locate an element span in shadow roots #shadow-host -> #inner-shadow-host
+[INFO] 2021-06-26 20:31:19,036 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-26 20:33:29,555 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-26 20:33:29,927 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-06-26 20:33:42,173 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2021-06-26 20:33:44,565 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-06-26 20:33:47,186 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-06-26 20:33:49,345 [main]   onTestStart - dropDownTest Started
+[INFO] 2021-06-26 20:33:51,492 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2021-06-26 20:33:53,647 [main]   onTestStart - loginTest Started
+[INFO] 2021-06-26 20:34:01,836 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-06-26 20:34:03,710 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-26 20:34:09,996 [main]   onTestFailure - Failed because of - Element not found {#shadow-host -> span}
+Expected: exist
+Page source: file:/D:/JavaProjects/MyTestFramework/build/reports/tests/1624728849750.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: Cannot locate an element span in shadow roots #shadow-host
+[INFO] 2021-06-26 20:34:12,398 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-26 20:34:40,501 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-26 20:34:40,961 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-06-26 20:34:55,425 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2021-06-26 20:34:58,202 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-06-26 20:35:01,129 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-06-26 20:35:03,569 [main]   onTestStart - dropDownTest Started
+[INFO] 2021-06-26 20:35:05,827 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2021-06-26 20:35:07,931 [main]   onTestStart - loginTest Started
+[INFO] 2021-06-26 20:35:17,066 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-06-26 20:35:19,517 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-26 20:35:26,350 [main]   onTestFailure - Failed because of - Element not found {#shadow-root -> span}
+Expected: exist
+Page source: file:/D:/JavaProjects/MyTestFramework/build/reports/tests/1624728926127.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: Cannot locate an element span in shadow roots #shadow-root
+[INFO] 2021-06-26 20:35:28,894 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-27 17:35:05,305 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-27 17:35:05,641 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-06-27 17:35:17,087 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2021-06-27 17:35:19,037 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-06-27 17:35:21,347 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-06-27 17:35:23,257 [main]   onTestStart - dropDownTest Started
+[INFO] 2021-06-27 17:35:25,253 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2021-06-27 17:35:27,099 [main]   onTestStart - loginTest Started
+[INFO] 2021-06-27 17:35:34,624 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-06-27 17:35:36,551 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-27 17:35:38,404 [main]   onTestFailure - Failed because of - java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "element" is null
+[INFO] 2021-06-27 17:35:40,587 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-27 18:13:18,267 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-27 18:13:18,668 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-27 18:13:27,400 [main]   onTestFailure - Failed because of - java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "element" is null
+[INFO] 2021-06-27 18:13:29,930 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-27 18:16:59,561 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-27 18:16:59,808 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-27 18:17:08,216 [main]   onTestFailure - Failed because of - java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "element" is null
+[INFO] 2021-06-27 18:17:10,289 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-27 18:29:33,882 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-27 18:29:34,211 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-27 18:29:48,415 [main]   onTestFailure - Failed because of - Element not found {#shadow-host -> span}
+Expected: text 'Let's have some different text!'
+Page source: file:/D:/JavaProjects/MyTestFramework/build/reports/tests/1624807788195.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: Cannot locate an element span in shadow roots #shadow-host
+[INFO] 2021-06-27 18:29:50,533 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-27 18:30:37,379 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-27 18:30:37,645 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-27 18:30:50,848 [main]   onTestFailure - Failed because of - Element not found {#shadow-root -> span}
+Expected: text 'Let's have some different text!'
+Page source: file:/D:/JavaProjects/MyTestFramework/build/reports/tests/1624807850599.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: Cannot locate an element span in shadow roots #shadow-root
+[INFO] 2021-06-27 18:30:53,169 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-27 18:42:30,180 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-27 18:42:30,588 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-27 18:42:45,070 [main]   onTestFailure - Failed because of - Element should exist {Ups, failed to described the element [caused by: JavascriptException: javascript error: Cannot read property 'toLowerCase' of undefined]}
+Element: 'Ups, failed to described the element [caused by: JavascriptException: javascript error: Cannot read property 'toLowerCase' of undefined]'
+Page source: file:/D:/JavaProjects/MyTestFramework/build/reports/tests/1624808564886.0.html
+Timeout: 4 s.
+Caused by: JavascriptException: javascript error: Argument to isShown must be of type Element
+[INFO] 2021-06-27 18:42:47,403 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-27 18:50:00,194 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-27 18:50:00,462 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-27 18:50:13,532 [main]   onTestFailure - Failed because of - Element not found {Ups, failed to described the element [caused by: JavascriptException: javascript error: Cannot read property 'toLowerCase' of undefined]}
+Expected: exist
+Page source: file:/D:/JavaProjects/MyTestFramework/build/reports/tests/1624809013344.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"span"}
+[INFO] 2021-06-27 18:50:15,849 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-27 18:51:02,101 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-27 18:51:02,371 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-27 18:51:15,174 [main]   onTestFailure - Failed because of - Element not found {Ups, failed to described the element [caused by: JavascriptException: javascript error: Cannot read property 'toLowerCase' of undefined]}
+Expected: exist
+Page source: file:/D:/JavaProjects/MyTestFramework/build/reports/tests/1624809074922.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"span"}
+[INFO] 2021-06-27 18:51:17,397 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-27 18:52:23,684 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-27 18:52:24,135 [main]   onTestStart - shadowDoomTest Started
+2021-06-27 18:59:16,096 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-27 18:59:16,337 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-27 18:59:29,101 [main]   onTestFailure - Failed because of - Element not found {my-paragraph >>> span}
+Expected: exist
+Page source: file:/D:/JavaProjects/MyTestFramework/build/reports/tests/1624809568881.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":" span"}
+[INFO] 2021-06-27 18:59:31,442 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-27 18:59:58,125 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-27 18:59:58,399 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-27 19:00:11,837 [main]   onTestFailure - Failed because of - Element not found {#content > my-paragraph:nth-child(4) >>> span}
+Expected: exist
+Page source: file:/D:/JavaProjects/MyTestFramework/build/reports/tests/1624809611556.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":" span"}
+[INFO] 2021-06-27 19:00:14,215 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-27 19:01:14,219 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-27 19:01:14,462 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-27 19:01:27,023 [main]   onTestFailure - Failed because of - Element not found {#shadow-root -> span}
+Expected: text 'Let's have some different text!'
+Page source: file:/D:/JavaProjects/MyTestFramework/build/reports/tests/1624809686806.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: Cannot locate an element span in shadow roots #shadow-root
+[INFO] 2021-06-27 19:01:29,415 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-27 19:02:20,700 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-27 19:02:20,932 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-27 19:02:34,127 [main]   onTestFailure - Failed because of - Element not found {my-paragraph -> span}
+Expected: text 'Let's have some different text!'
+Page source: file:/D:/JavaProjects/MyTestFramework/build/reports/tests/1624809753898.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: Cannot locate an element span in shadow roots my-paragraph
+[INFO] 2021-06-27 19:02:36,277 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-27 19:04:35,373 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-27 19:04:35,611 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-27 19:04:47,875 [main]   onTestFailure - Failed because of - Element not found {my-paragraph -> ul > li:first-child}
+Expected: text 'Let's have some different text!'
+Page source: file:/D:/JavaProjects/MyTestFramework/build/reports/tests/1624809887651.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: Cannot locate an element ul > li:first-child in shadow roots my-paragraph
+[INFO] 2021-06-27 19:04:50,087 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-27 19:14:34,985 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-27 19:14:35,332 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-27 19:14:44,937 [main]   onTestFailure - Failed because of - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"ul > li:first-child"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DEADLOCK-PC', ip: '192.168.1.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\miste\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49940}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c5a699dedc12504d651abee05da1802f
+*** Element info: {Using=css selector, value=ul > li:first-child}
+[INFO] 2021-06-27 19:14:47,228 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-27 19:15:55,095 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-27 19:15:55,354 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-27 19:16:03,796 [main]   onTestFailure - Failed because of - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"ul > li:nth-child(1)"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DEADLOCK-PC', ip: '192.168.1.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\miste\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52412}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5177ceef353f83ac1f9777583fa22ac4
+*** Element info: {Using=css selector, value=ul > li:nth-child(1)}
+[INFO] 2021-06-27 19:16:06,063 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-28 17:07:59,665 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-28 17:07:59,941 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-06-28 17:08:11,367 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2021-06-28 17:08:13,270 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-06-28 17:08:15,600 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-06-28 17:08:17,387 [main]   onTestStart - dropDownTest Started
+[INFO] 2021-06-28 17:08:19,353 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2021-06-28 17:08:21,377 [main]   onTestStart - loginTest Started
+[INFO] 2021-06-28 17:08:29,168 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-06-28 17:08:31,010 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-28 17:08:32,624 [main]   onTestFailure - Failed because of - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"ul > li:nth-child(1)"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DEADLOCK-PC', ip: '192.168.1.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\miste\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 27edc027556e2e150eaa969fd299f5ab
+*** Element info: {Using=css selector, value=ul > li:nth-child(1)}
+[INFO] 2021-06-28 17:08:34,757 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-28 17:09:27,253 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-28 17:09:27,500 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-06-28 17:09:38,195 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2021-06-28 17:09:40,250 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-06-28 17:09:42,494 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-06-28 17:09:44,624 [main]   onTestStart - dropDownTest Started
+[INFO] 2021-06-28 17:09:46,564 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2021-06-28 17:09:48,357 [main]   onTestStart - loginTest Started
+[INFO] 2021-06-28 17:09:55,618 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-06-28 17:09:57,238 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-28 17:09:59,267 [main]   onTestFailure - Failed because of - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"ul > li:nth-child(1)"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DEADLOCK-PC', ip: '192.168.1.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\miste\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49269}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b2c2885ca8688c4d67084b83f943f6bc
+*** Element info: {Using=css selector, value=ul > li:nth-child(1)}
+[INFO] 2021-06-28 17:10:02,101 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-28 17:12:21,160 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-28 17:12:21,518 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-06-28 17:12:43,453 [main]   onTestFailure - Failed because of - org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DEADLOCK-PC', ip: '192.168.1.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: driver.version: SelenideDriver
+selenide.url: http://admin:admin@the-internet.herokuapp.com/basic_auth
+selenide.baseUrl: http://localhost:8080
+[INFO] 2021-06-28 17:12:43,454 [main]   onTestFailure - Failed because of - java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first.
+[INFO] 2021-06-28 17:12:43,455 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-28 17:13:11,813 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-28 17:13:12,096 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-06-28 17:13:23,854 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2021-06-28 17:13:26,008 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-06-28 17:13:28,459 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-06-28 17:13:30,399 [main]   onTestStart - dropDownTest Started
+[INFO] 2021-06-28 17:13:32,784 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2021-06-28 17:13:35,035 [main]   onTestStart - loginTest Started
+[INFO] 2021-06-28 17:13:44,444 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-06-28 17:13:47,347 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-28 17:13:48,009 [main]   onTestFailure - Failed because of - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"my\-paragraph"}
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DEADLOCK-PC', ip: '192.168.1.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: /tmp/.com.google.Chrome.oNlb6l}, goog:chromeOptions: {debuggerAddress: localhost:46453}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7f2cd766531b5e5b9fc9b8cb9ce888cb
+*** Element info: {Using=tag name, value=my-paragraph}
+[INFO] 2021-06-28 17:13:50,762 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-28 17:14:30,588 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-28 17:14:30,884 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-06-28 17:14:41,962 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2021-06-28 17:14:43,937 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-06-28 17:14:46,347 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-06-28 17:14:48,302 [main]   onTestStart - dropDownTest Started
+[INFO] 2021-06-28 17:14:50,236 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2021-06-28 17:14:51,911 [main]   onTestStart - loginTest Started
+[INFO] 2021-06-28 17:14:59,290 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-06-28 17:15:01,273 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-28 17:15:03,259 [main]   onTestFailure - Failed because of - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"ul > li:nth-child(1)"}
+  (Session info: headless chrome=91.0.4472.77)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DEADLOCK-PC', ip: '192.168.1.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: /tmp/.com.google.Chrome.djcHo7}, goog:chromeOptions: {debuggerAddress: localhost:37157}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 61a96cd719a53195780446eb0858615f
+*** Element info: {Using=css selector, value=ul > li:nth-child(1)}
+[INFO] 2021-06-28 17:15:05,227 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-29 11:01:10,791 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-29 11:01:11,062 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-06-29 11:01:22,708 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2021-06-29 11:01:24,906 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-06-29 11:01:27,245 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-06-29 11:01:29,155 [main]   onTestStart - dropDownTest Started
+[INFO] 2021-06-29 11:01:31,261 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2021-06-29 11:01:33,376 [main]   onTestStart - loginTest Started
+[INFO] 2021-06-29 11:01:41,772 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-06-29 11:01:43,638 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-29 11:01:45,554 [main]   onTestFailure - Failed because of - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"ul > li:nth-child(1)"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DEADLOCK-PC', ip: '192.168.1.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\miste\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59671}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b666797af0d6c9b98a89672aec0f1ec
+*** Element info: {Using=css selector, value=ul > li:nth-child(1)}
+[INFO] 2021-06-29 11:01:47,866 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-29 11:04:11,276 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-29 11:04:11,566 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-06-29 11:04:21,956 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2021-06-29 11:04:24,009 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-06-29 11:04:26,327 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-06-29 11:04:28,273 [main]   onTestStart - dropDownTest Started
+[INFO] 2021-06-29 11:04:30,198 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2021-06-29 11:04:32,079 [main]   onTestStart - loginTest Started
+[INFO] 2021-06-29 11:04:39,514 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-06-29 11:04:41,096 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-29 11:04:47,218 [main]   onTestFailure - Failed because of - Element not found {#content > my-paragraph:nth-child(4) -> span}
+Expected: text 'Let's have some different text!'
+Page source: file:/D:/JavaProjects/MyTestFramework/build/reports/tests/1624953886987.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: Cannot locate an element span in shadow roots #content > my-paragraph:nth-child(4)
+[INFO] 2021-06-29 11:04:49,323 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-29 11:06:43,537 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-29 11:06:43,790 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-06-29 11:06:53,839 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2021-06-29 11:06:55,893 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-06-29 11:06:58,236 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-06-29 11:07:00,061 [main]   onTestStart - dropDownTest Started
+[INFO] 2021-06-29 11:07:02,195 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2021-06-29 11:07:04,079 [main]   onTestStart - loginTest Started
+[INFO] 2021-06-29 11:07:11,544 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-06-29 11:07:13,461 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-29 11:07:19,739 [main]   onTestFailure - Failed because of - Element should have text 'Let's have some different text!' {#content > my-paragraph:nth-child(4) -> p > slot}
+Element: '<slot name="my-text">My default text</slot>'
+Page source: file:/D:/JavaProjects/MyTestFramework/build/reports/tests/1624954039498.0.html
+Timeout: 4 s.
+[INFO] 2021-06-29 11:07:21,910 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-29 11:31:39,845 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-29 11:31:40,087 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-06-29 11:31:50,858 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2021-06-29 11:31:52,844 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-06-29 11:31:55,416 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-06-29 11:31:57,480 [main]   onTestStart - dropDownTest Started
+[INFO] 2021-06-29 11:31:59,643 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2021-06-29 11:32:01,771 [main]   onTestStart - loginTest Started
+[INFO] 2021-06-29 11:32:10,895 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-06-29 11:32:13,046 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-29 11:32:15,220 [main]   onTestSuccess - shadowDoomTest Passed
+[INFO] 2021-06-29 11:32:17,288 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-30 11:06:38,405 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-30 11:06:38,734 [main]   onTestStart - loginTest Started
+[INFO] 2021-06-30 11:07:00,865 [main]   onTestFailure - Failed because of - org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DEADLOCK-PC', ip: '192.168.1.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: driver.version: SelenideDriver
+selenide.url: http://the-internet.herokuapp.com/login
+selenide.baseUrl: http://localhost:8080
+[INFO] 2021-06-30 11:07:00,865 [main]   onTestFailure - Failed because of - java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first.
+[INFO] 2021-06-30 11:07:00,866 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-06-30 11:07:20,412 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-06-30 11:07:20,677 [main]   onTestStart - loginTest Started
+[INFO] 2021-06-30 11:07:35,526 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-06-30 11:07:37,616 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-06-30 11:07:40,114 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-06-30 11:07:42,193 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-06-30 11:07:45,799 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2021-06-30 11:07:47,429 [main]   onTestStart - dropDownTest Started
+[INFO] 2021-06-30 11:07:49,434 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2021-06-30 11:07:51,197 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-06-30 11:07:53,116 [main]   onTestSuccess - shadowDoomTest Passed
+[INFO] 2021-06-30 11:07:55,135 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-07-04 09:40:00,473 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-07-04 09:40:00,811 [main]   onTestStart - loginTest Started
+[INFO] 2021-07-04 09:40:06,776 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-07-04 09:40:07,155 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-07-04 09:40:07,814 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-07-04 09:40:08,046 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-07-04 09:40:08,389 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2021-07-04 09:40:08,609 [main]   onTestStart - dropDownTest Started
+[INFO] 2021-07-04 09:40:08,944 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2021-07-04 09:40:09,163 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-07-04 09:40:09,365 [main]   onTestSuccess - shadowDoomTest Passed
+[INFO] 2021-07-04 09:40:09,720 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-07-04 10:00:48,979 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-07-04 10:00:49,386 [main]   onTestStart - loginTest Started
+[INFO] 2021-07-04 10:00:56,014 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-07-04 10:00:56,407 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-07-04 10:00:57,102 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-07-04 10:00:57,352 [main]   onTestStart - basicAuthTest Started
+2021-07-04 17:47:32,014 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-07-04 17:47:32,282 [main]   onTestStart - loginTest Started
+[INFO] 2021-07-04 17:47:37,765 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-07-04 17:47:38,146 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-07-04 17:47:38,795 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-07-04 17:47:39,024 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-07-04 17:47:39,358 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2021-07-04 17:47:39,597 [main]   onTestStart - dropDownTest Started
+[INFO] 2021-07-04 17:47:39,940 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2021-07-04 17:47:40,167 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-07-04 17:47:40,406 [main]   onTestSuccess - shadowDoomTest Passed
+[INFO] 2021-07-04 17:47:40,764 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-07-04 17:59:15,139 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-07-04 17:59:15,404 [main]   onTestStart - loginTest Started
+[INFO] 2021-07-04 17:59:20,136 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-07-04 17:59:20,499 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-07-04 17:59:21,278 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-07-04 17:59:21,524 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-07-04 17:59:21,877 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2021-07-04 17:59:22,122 [main]   onTestStart - dropDownTest Started
+[INFO] 2021-07-04 17:59:22,484 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2021-07-04 17:59:22,732 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-07-04 17:59:22,945 [main]   onTestSuccess - shadowDoomTest Passed
+[INFO] 2021-07-04 17:59:23,309 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-07-04 18:09:02,963 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-07-04 18:09:03,233 [main]   onTestStart - loginTest Started
+[INFO] 2021-07-04 18:09:08,586 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-07-04 18:09:08,942 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-07-04 18:09:09,585 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-07-04 18:09:09,816 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-07-04 18:09:10,155 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2021-07-04 18:09:10,396 [main]   onTestStart - dropDownTest Started
+[INFO] 2021-07-04 18:09:10,730 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2021-07-04 18:09:10,951 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-07-04 18:09:11,201 [main]   onTestSuccess - shadowDoomTest Passed
+[INFO] 2021-07-04 18:09:11,564 [main]   onFinish - =========== Finish: MyTestFramework ===============
