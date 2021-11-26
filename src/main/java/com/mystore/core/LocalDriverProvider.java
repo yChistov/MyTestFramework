@@ -13,26 +13,26 @@ import javax.annotation.Nonnull;
 
 public class LocalDriverProvider implements WebDriverProvider {
 
-  private WebDriver driver;
+    private WebDriver driver;
 
-  @Nonnull
-  @Override
-  public WebDriver createDriver(@Nonnull DesiredCapabilities desiredCapabilities) {
+    @Nonnull
+    @Override
+    public WebDriver createDriver(@Nonnull DesiredCapabilities desiredCapabilities) {
 
-    switch (TestConfig.browser) {
-      case "chrome":
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        break;
-      case "firefox":
-        WebDriverManager.firefoxdriver().setup();
-        driver = new FirefoxDriver();
-        break;
-      case "opera":
-        WebDriverManager.operadriver().setup();
-        driver = new OperaDriver();
-        break;
+        switch (TestConfig.browser) {
+            case "chrome":
+                WebDriverManager.chromedriver().setup();
+                driver = new ChromeDriver();
+                break;
+            case "firefox":
+                WebDriverManager.firefoxdriver().setup();
+                driver = new FirefoxDriver();
+                break;
+            case "opera":
+                WebDriverManager.operadriver().setup();
+                driver = new OperaDriver();
+                break;
+        }
+        return driver;
     }
-    return driver;
-  }
 }

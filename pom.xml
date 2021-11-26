@@ -15,10 +15,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <aspectj.version>1.9.7.M2</aspectj.version>
-        <selenide.version>5.22.2</selenide.version>
+        <selenide.version>6.0.3</selenide.version>
         <testng.version>7.4.0</testng.version>
         <asm.version>9.2</asm.version>
-        <allure.version>2.14.0</allure.version>
+        <allure.version>2.16.1</allure.version>
+        <log4j.version>1.2.17</log4j.version>
+        <slf4j.version>1.7.32</slf4j.version>
+        <hamcrest.version>2.2</hamcrest.version>
     </properties>
 
     <dependencies>
@@ -35,12 +38,12 @@
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
+            <version>${log4j.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>1.7.30</version>
+            <version>${slf4j.version}</version>
         </dependency>
         <dependency>
             <groupId>io.qameta.allure</groupId>
@@ -52,6 +55,12 @@
             <artifactId>allure-selenide</artifactId>
             <version>${allure.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest</artifactId>
+            <version>${hamcrest.version}</version>
+        </dependency>
+
     </dependencies>
 
     <build>

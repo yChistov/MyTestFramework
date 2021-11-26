@@ -16,29 +16,29 @@ import static com.mystore.helpers.Driver.*;
 
 public class BaseTest {
 
-  protected App app;
-  protected SoftAssert softAssert;
-  protected Logger logger;
+    protected App app;
+    protected SoftAssert softAssert;
+    protected Logger logger;
 
-  @BeforeClass
-  public void setUp() {
-    initDriver();
-    app = new App();
-    softAssert = new SoftAssert();
-    logger = LogManager.getLogger("");
-    DOMConfigurator.configure("src/main/resources/log4j.xml");
-    PropertyConfigurator.configure("src/main/resources/log4j.properties");
-    SelenideLogger.addListener(
-        "AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(false));
-  }
+    @BeforeClass
+    public void setUp() {
+        initDriver();
+        app = new App();
+        softAssert = new SoftAssert();
+        logger = LogManager.getLogger("");
+        DOMConfigurator.configure("src/main/resources/log4j.xml");
+        PropertyConfigurator.configure("src/main/resources/log4j.properties");
+        SelenideLogger.addListener(
+                "AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(false));
+    }
 
-  @AfterMethod
-  public void clearCookies() {
-    clearAllCookies();
-  }
+    @AfterMethod
+    public void clearCookies() {
+        clearAllCookies();
+    }
 
-  @AfterClass
-  public void tearDown() {
-    close();
-  }
+    @AfterClass
+    public void tearDown() {
+        close();
+    }
 }
