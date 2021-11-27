@@ -3,10 +3,11 @@ package com.mystore.tests;
 import com.mystore.helpers.TestListener;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
+import org.hamcrest.Matchers;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.assertEquals;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 @Listeners(TestListener.class)
 public class MyTest extends BaseTest {
@@ -23,7 +24,7 @@ public class MyTest extends BaseTest {
     public void loginTest() {
         app.loginPage.open();
         app.loginPage.login("tomsmith", "SuperSecretPassword!");
-        assertEquals(app.loginPage.getWelcomeText(), WELCOME_TEXT);
+        assertThat("Welcome text is: " + app.loginPage.getWelcomeText(), app.loginPage.getWelcomeText().equals(WELCOME_TEXT));
     }
 
     @Step
@@ -33,7 +34,7 @@ public class MyTest extends BaseTest {
         app.addAndRemovePage.open();
         app.addAndRemovePage.clickOnAddButton(NUMBER_OF_BUTTON_CLICKS);
         app.addAndRemovePage.clickOnDeleteButton();
-        assertEquals(app.addAndRemovePage.getDeleteElementsSize(), 0);
+        assertThat(app.addAndRemovePage.getDeleteElementsSize(), Matchers.is(0));
     }
 
     @Step
@@ -41,7 +42,7 @@ public class MyTest extends BaseTest {
     @Description(value = "Login with correct credentials into url")
     public void basicAuthTest() {
         app.basicAuthPage.open("admin", "admin");
-        assertEquals(app.basicAuthPage.getBasicAuth(), BASIC_AUTH);
+        assertThat("Title is: " + app.basicAuthPage.getBasicAuth(), app.basicAuthPage.getBasicAuth().equals(BASIC_AUTH));
     }
 
     @Step
@@ -50,7 +51,7 @@ public class MyTest extends BaseTest {
     public void dropDownTest() {
         app.dropDownPage.open();
         app.dropDownPage.selectOptionByValue(VALUE_OPTION);
-        assertEquals(app.dropDownPage.getText(), VALUE_OPTION);
+        assertThat("Option is: " + app.dropDownPage.getText(), app.dropDownPage.getText().equals(VALUE_OPTION));
     }
 
     @Step
@@ -58,6 +59,6 @@ public class MyTest extends BaseTest {
     @Description(value = "Shadow DOM check")
     public void shadowDoomTest() {
         app.shadowDomPage.open();
-        assertEquals(app.shadowDomPage.getText(), SOME_TEXT);
+        assertThat("Page text is: " + app.shadowDomPage.getText(), app.shadowDomPage.getText().equals(SOME_TEXT));
     }
 }

@@ -2,6 +2,7 @@ package com.mystore.core;
 
 import com.codeborne.selenide.WebDriverProvider;
 import com.mystore.helpers.TestConfig;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -17,7 +18,7 @@ public class AWSSelenoidDriverProvider implements WebDriverProvider {
 
     @Nonnull
     @Override
-    public WebDriver createDriver(@Nonnull DesiredCapabilities desiredCapabilities) {
+    public WebDriver createDriver(@Nonnull Capabilities desiredCapabilities) {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         Map<String, Object> prefs = new HashMap<>();
         switch (TestConfig.browser) {

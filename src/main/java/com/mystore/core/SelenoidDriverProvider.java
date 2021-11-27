@@ -2,6 +2,7 @@ package com.mystore.core;
 
 import com.codeborne.selenide.WebDriverProvider;
 import com.mystore.helpers.TestConfig;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -17,7 +18,7 @@ public class SelenoidDriverProvider implements WebDriverProvider {
 
     @Nonnull
     @Override
-    public WebDriver createDriver(@Nonnull DesiredCapabilities desiredCapabilities) {
+    public WebDriver createDriver(@Nonnull Capabilities desiredCapabilities) {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         Map<String, Object> prefs = new HashMap<>();
         switch (TestConfig.browser) {
@@ -48,7 +49,7 @@ public class SelenoidDriverProvider implements WebDriverProvider {
                         "enableVNC", true,
                         "enableVideo", true));
         try {
-            return new RemoteWebDriver(new URL("http://172.25.144.1:4444/wd/hub"), capabilities);
+            return new RemoteWebDriver(new URL("http://172.26.176.1:4444/wd/hub"), capabilities);
         } catch (final MalformedURLException e) {
             throw new RuntimeException("Unable to create driver", e);
         }

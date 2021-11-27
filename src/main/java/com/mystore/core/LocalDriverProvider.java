@@ -3,11 +3,11 @@ package com.mystore.core;
 import com.codeborne.selenide.WebDriverProvider;
 import com.mystore.helpers.TestConfig;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 
 import javax.annotation.Nonnull;
 
@@ -17,7 +17,7 @@ public class LocalDriverProvider implements WebDriverProvider {
 
     @Nonnull
     @Override
-    public WebDriver createDriver(@Nonnull DesiredCapabilities desiredCapabilities) {
+    public WebDriver createDriver(@Nonnull Capabilities desiredCapabilities) {
 
         switch (TestConfig.browser) {
             case "chrome":

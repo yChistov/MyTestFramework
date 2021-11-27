@@ -611,3 +611,36 @@ selenide.baseUrl: http://localhost:8080
 [INFO] 2021-11-27 00:30:45,319 [main]   onTestStart - loginTest Started
 [INFO] 2021-11-27 00:30:50,389 [main]   onTestSuccess - loginTest Passed
 [INFO] 2021-11-27 00:30:50,723 [main]   onFinish - =========== Finish: MytestFramework ===============
+2021-11-27 07:37:24,252 INFO  =========== Start: MytestFramework=============== 
+[INFO] 2021-11-27 07:37:24,512 [main]   onTestStart - loginTest Started
+[INFO] 2021-11-27 07:37:31,246 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-11-27 07:37:31,629 [main]   onFinish - =========== Finish: MytestFramework ===============
+2021-11-27 13:08:58,588 INFO  =========== Start: MytestFramework=============== 
+[INFO] 2021-11-27 13:08:58,829 [main]   onTestStart - loginTest Started
+[INFO] 2021-11-27 13:09:03,851 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-11-27 13:09:04,234 [main]   onFinish - =========== Finish: MytestFramework ===============
+2021-11-27 13:09:36,816 INFO  =========== Start: MytestFramework=============== 
+[INFO] 2021-11-27 13:09:37,046 [main]   onTestStart - loginTest Started
+[INFO] 2021-11-27 13:09:54,907 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-11-27 13:09:55,306 [main]   onFinish - =========== Finish: MytestFramework ===============
+2021-11-27 13:23:19,033 INFO  =========== Start: MytestFramework=============== 
+[INFO] 2021-11-27 13:23:19,256 [main]   onTestStart - loginTest Started
+[INFO] 2021-11-27 13:23:19,386 [main]   onTestFailure - Failed because of - java.lang.IllegalArgumentException: java.lang.InstantiationException
+[INFO] 2021-11-27 13:23:19,386 [main]   onTestFailure - Failed because of - java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first.
+[INFO] 2021-11-27 13:23:19,477 [main]   onFinish - =========== Finish: MytestFramework ===============
+2021-11-27 13:26:14,133 INFO  =========== Start: MytestFramework=============== 
+[INFO] 2021-11-27 13:26:14,350 [main]   onTestStart - loginTest Started
+[INFO] 2021-11-27 13:26:18,609 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-11-27 13:26:19,005 [main]   onFinish - =========== Finish: MytestFramework ===============
+2021-11-27 13:26:34,386 INFO  =========== Start: Tests=============== 
+[INFO] 2021-11-27 13:26:34,607 [main]   onTestStart - loginTest Started
+[INFO] 2021-11-27 13:26:39,902 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-11-27 13:26:40,144 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-11-27 13:26:40,534 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-11-27 13:26:40,733 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-11-27 13:26:41,051 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2021-11-27 13:26:41,235 [main]   onTestStart - dropDownTest Started
+[INFO] 2021-11-27 13:26:41,528 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2021-11-27 13:26:41,718 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-11-27 13:26:41,901 [main]   onTestSuccess - shadowDoomTest Passed
+[INFO] 2021-11-27 13:26:42,160 [main]   onFinish - =========== Finish: Tests ===============
