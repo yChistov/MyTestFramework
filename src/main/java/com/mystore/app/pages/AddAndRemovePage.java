@@ -10,8 +10,8 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class AddAndRemovePage extends BasePage {
 
-  private SelenideElement addElementBtn = $(".example button");
-  private ElementsCollection deleteBtnList = $$("#elements .added-manually");
+  private final SelenideElement addElementBtn = $(".example button");
+  private final ElementsCollection deleteBtnList = $$("#elements .added-manually");
 
   public AddAndRemovePage(String pageUrl) {
     super(pageUrl);

@@ -8,10 +8,10 @@ import static com.mystore.helpers.Driver.waitForUrlContains;
 
 public class LoginPage extends BasePage {
 
-  private SelenideElement loginField = $("#username");
-  private SelenideElement passwordField = $("#password");
-  private SelenideElement signInButton = $(".radius");
-  private SelenideElement welcomeText = $(".subheader");
+  private final SelenideElement loginField = $("#username");
+  private final SelenideElement passwordField = $("#password");
+  private final SelenideElement signInButton = $(".radius");
+  private final SelenideElement welcomeText = $(".subheader");
 
   public LoginPage(String pageUrl) {
     super(pageUrl);

@@ -644,3 +644,56 @@ selenide.baseUrl: http://localhost:8080
 [INFO] 2021-11-27 13:26:41,718 [main]   onTestStart - shadowDoomTest Started
 [INFO] 2021-11-27 13:26:41,901 [main]   onTestSuccess - shadowDoomTest Passed
 [INFO] 2021-11-27 13:26:42,160 [main]   onFinish - =========== Finish: Tests ===============
+2021-12-05 13:23:41,442 INFO  =========== Start: Tests=============== 
+[INFO] 2021-12-05 13:23:41,637 [main]   onTestStart - loginTest Started
+[INFO] 2021-12-05 13:23:46,599 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-12-05 13:23:46,834 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-12-05 13:23:47,227 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-12-05 13:23:47,422 [main]   onTestStart - basicAuthTest Started
+[INFO] 2021-12-05 13:23:47,729 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2021-12-05 13:23:47,914 [main]   onTestStart - dropDownTest Started
+[INFO] 2021-12-05 13:23:48,187 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2021-12-05 13:23:48,374 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2021-12-05 13:23:48,553 [main]   onTestSuccess - shadowDoomTest Passed
+[INFO] 2021-12-05 13:23:48,794 [main]   onFinish - =========== Finish: Tests ===============
+2021-12-12 11:11:02,213 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-12-12 11:11:02,401 [main]   onTestStart - loginTest Started
+[INFO] 2021-12-12 11:11:06,996 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-12-12 11:11:07,310 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-12-12 11:19:34,512 INFO  =========== Start: MyTestFramework=============== 
+2021-12-12 11:19:34,758 INFO  loginTest Started 
+2021-12-12 11:19:34,762 INFO  Skipped because of - java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first. 
+2021-12-12 11:19:34,774 INFO  =========== Finish: MyTestFramework =============== 
+2021-12-12 11:19:55,798 INFO  =========== Start: MyTestFramework=============== 
+2021-12-12 11:19:56,073 INFO  loginTest Started 
+2021-12-12 11:19:56,076 INFO  Skipped because of - java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first. 
+2021-12-12 11:19:56,090 INFO  =========== Finish: MyTestFramework =============== 
+2021-12-12 11:20:23,685 INFO  =========== Start: MyTestFramework=============== 
+2021-12-12 11:20:23,944 INFO  loginTest Started 
+2021-12-12 11:20:23,947 INFO  Skipped because of - java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first. 
+2021-12-12 11:20:23,960 INFO  =========== Finish: MyTestFramework =============== 
+2021-12-12 11:21:47,891 INFO  =========== Start: MyTestFramework=============== 
+2021-12-12 11:21:48,137 INFO  loginTest Started 
+2021-12-12 11:21:48,140 INFO  Skipped because of - java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first. 
+2021-12-12 11:21:48,153 INFO  =========== Finish: MyTestFramework =============== 
+2021-12-12 11:24:22,677 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-12-12 11:24:22,863 [main]   onTestStart - loginTest Started
+[INFO] 2021-12-12 11:24:28,857 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-12-12 11:24:29,158 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-12-12 11:25:04,976 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-12-12 11:25:05,163 [main]   onTestStart - loginTest Started
+[INFO] 2021-12-12 11:25:09,500 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-12-12 11:25:09,786 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-12-12 11:25:42,561 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-12-12 11:25:42,749 [main]   onTestStart - loginTest Started
+[INFO] 2021-12-12 11:25:42,826 [main]   onTestFailure - Failed because of - java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first.
+[INFO] 2021-12-12 11:25:42,826 [main]   onTestFailure - Failed because of - java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first.
+[INFO] 2021-12-12 11:25:42,896 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-12-12 11:26:03,514 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-12-12 11:26:03,722 [main]   onTestStart - loginTest Started
+[INFO] 2021-12-12 11:26:07,639 [main]   onTestSuccess - loginTest Passed
+[INFO] 2021-12-12 11:26:07,950 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2021-12-12 11:26:15,928 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2021-12-12 11:26:16,092 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2021-12-12 11:26:19,550 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2021-12-12 11:26:19,855 [main]   onFinish - =========== Finish: MyTestFramework ===============

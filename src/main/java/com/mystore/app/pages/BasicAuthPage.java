@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class BasicAuthPage extends BasePage {
 
-  private SelenideElement basicAuth = $(".example p");
+  private final SelenideElement basicAuth = $(".example p");
 
   public BasicAuthPage(String pageUrl) {
     super(pageUrl);

@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class DropDownPage extends BasePage {
 
-  private SelenideElement dropDown = $(By.id("dropdown"));
+  private final SelenideElement dropDown = $(By.id("dropdown"));
 
   public DropDownPage(String pageUrl) {
     super(pageUrl);
