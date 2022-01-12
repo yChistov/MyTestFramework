@@ -60,7 +60,6 @@
             <artifactId>hamcrest</artifactId>
             <version>${hamcrest.version}</version>
         </dependency>
-
     </dependencies>
 
     <build>

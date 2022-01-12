@@ -10,3 +10,7 @@
 [INFO] 2022-01-12 14:26:45,919 [main]   onTestStart - shadowDoomTest Started
 [INFO] 2022-01-12 14:26:46,148 [main]   onTestSuccess - shadowDoomTest Passed
 [INFO] 2022-01-12 14:26:46,439 [main]   onFinish - =========== Finish: Tests ===============
+2022-01-13 10:28:09,078 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-01-13 10:28:09,322 [main]   onTestStart - loginTest Started
+[INFO] 2022-01-13 10:28:15,755 [main]   onTestSuccess - loginTest Passed
+[INFO] 2022-01-13 10:28:16,075 [main]   onFinish - =========== Finish: MyTestFramework ===============
