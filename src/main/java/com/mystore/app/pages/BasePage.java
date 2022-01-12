@@ -30,5 +30,6 @@ public abstract class BasePage {
             + "/"
             + Trim.ltrim(pageUrl, "/");
     Selenide.open(authUrl);
+    maximize();
   }
 }

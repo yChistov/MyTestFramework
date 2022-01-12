@@ -15,10 +15,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <aspectj.version>1.9.7.M2</aspectj.version>
-        <selenide.version>6.1.1</selenide.version>
-        <testng.version>7.4.0</testng.version>
+        <selenide.version>6.2.0</selenide.version>
+        <testng.version>7.5</testng.version>
         <asm.version>9.2</asm.version>
-        <allure.version>2.16.1</allure.version>
+        <allure.version>2.17.2</allure.version>
         <log4j.version>1.2.17</log4j.version>
         <slf4j.version>1.7.32</slf4j.version>
         <hamcrest.version>2.2</hamcrest.version>
