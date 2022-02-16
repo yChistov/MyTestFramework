@@ -1,7 +1,8 @@
-package com.mystore.app.pages;
+package com.mystore.app.pages.herokuapp;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
+import com.mystore.app.pages.BasePage;
 
 import java.util.stream.IntStream;
 

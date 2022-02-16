@@ -1,6 +1,8 @@
 package com.mystore.app;
 
-import com.mystore.app.pages.*;
+import com.mystore.app.pages.elmir.ElmirPage;
+import com.mystore.app.pages.google.GoogleHomePage;
+import com.mystore.app.pages.herokuapp.*;
 
 public class PageBuilder {
 
@@ -22,5 +24,13 @@ public class PageBuilder {
 
     public static ShadowDomPage buildShadowDomPage() {
         return new ShadowDomPage("/shadowdom");
+    }
+
+    public static GoogleHomePage buildGoogleHomePage() {
+        return new GoogleHomePage("/ncr");
+    }
+
+    public static ElmirPage buildElmirPage() {
+        return new ElmirPage("/");
     }
 }

@@ -15,6 +15,7 @@ import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 import static com.codeborne.selenide.Selenide.$;
@@ -63,7 +64,7 @@ public class Driver {
     }
 
     public static void waitForUrlContains(String urlChunk) {
-        WebDriverWait wait = new WebDriverWait(currentDriver(), 10);
+        WebDriverWait wait = new WebDriverWait(currentDriver(), Duration.ofSeconds(10));
         wait.until(ExpectedConditions.urlContains(urlChunk));
     }
 
@@ -103,8 +104,7 @@ public class Driver {
 
     public static List<LogEntry> getBrowserLogs() {
         LogEntries log = currentDriver().manage().logs().get("browser");
-        List<LogEntry> logList = log.getAll();
-        return logList;
+        return log.getAll();
     }
 
     // COOKIES
@@ -132,10 +132,8 @@ public class Driver {
     }
 
     public static WebElement expandElement(WebElement element) {
-        WebElement ele =
-                (WebElement)
-                        ((JavascriptExecutor) currentDriver())
-                                .executeScript("return arguments[0].shadowRoot", element);
-        return ele;
+        return (WebElement)
+                ((JavascriptExecutor) currentDriver())
+                        .executeScript("return arguments[0].shadowRoot", element);
     }
 }

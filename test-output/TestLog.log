@@ -14,3 +14,194 @@
 [INFO] 2022-01-13 10:28:09,322 [main]   onTestStart - loginTest Started
 [INFO] 2022-01-13 10:28:15,755 [main]   onTestSuccess - loginTest Passed
 [INFO] 2022-01-13 10:28:16,075 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-01-28 14:35:38,094 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-01-28 14:35:38,328 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2022-01-28 14:35:43,513 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2022-01-28 14:35:43,813 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-03 13:35:31,476 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-03 13:35:31,694 [main]   onTestStart - loginTest Started
+[INFO] 2022-02-03 13:35:42,938 [main]   onTestFailure - Failed because of - org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DEADLOCK-PC', ip: '192.168.1.137', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: 97.0, goog:chromeOptions: {args: [], extensions: [], prefs: {profile.default_content_setting_values.notifications: 2}}, selenoid:options: {enableVNC: true, enableVideo: true}}], desiredCapabilities=Capabilities {browserName: chrome, browserVersion: 97.0, goog:chromeOptions: {args: [], extensions: [], prefs: {profile.default_content_setting_values.notifications: 2}}, selenoid:options: {enableVNC: true, enableVideo: true}}}]
+selenide.url: http://the-internet.herokuapp.com/login
+Capabilities {}
+selenide.baseUrl: http://localhost:8080
+[INFO] 2022-02-03 13:35:42,941 [main]   onTestFailure - Failed because of - java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first.
+[INFO] 2022-02-03 13:35:42,950 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-03 13:36:49,658 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-03 13:36:49,871 [main]   onTestStart - loginTest Started
+[INFO] 2022-02-03 13:36:55,636 [main]   onTestSuccess - loginTest Passed
+[INFO] 2022-02-03 13:36:55,941 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-11 10:54:42,710 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-11 10:54:42,949 [main]   onTestStart - loginTest Started
+[INFO] 2022-02-11 10:54:48,367 [main]   onTestSuccess - loginTest Passed
+[INFO] 2022-02-11 10:54:48,657 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-11 10:56:54,153 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-11 10:56:54,368 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2022-02-11 10:56:59,518 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2022-02-11 10:56:59,821 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-11 11:06:21,591 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-11 11:06:21,813 [main]   onTestStart - shadowDoomTest Started
+2022-02-11 11:06:53,761 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-11 11:06:53,968 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-11 11:07:03,553 [main]   onTestFailure - Failed because of - Element not found {#content > my-paragraph:nth-child(4) -> p > slot}
+Expected: exist
+Page source: file:/D:/Frameworks/MyTestFramework/build/reports/tests/1644570423154.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: Cannot locate an element p > slot in shadow roots #content > my-paragraph:nth-child(4)
+[INFO] 2022-02-11 11:07:03,818 [main]   onTestFailure - Failed because of - WebDriverException: chrome not reachable
+Page source: file:/D:/Frameworks/MyTestFramework/build/reports/tests/1644570399424.0.html
+Timeout: 4 s.
+Caused by: WebDriverException: chrome not reachable
+[INFO] 2022-02-11 11:07:04,231 [main]   onFinish - =========== Finish: MyTestFramework ===============
+[INFO] 2022-02-11 11:07:16,020 [main]   onTestFailure - Failed because of - org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=98.0.4758.82)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DEADLOCK-PC', ip: '192.168.1.137', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4da61601535968b0698f8c8875c77cf5, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\miste\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51740}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51740/devtoo..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4da61601535968b0698f8c8875c77cf5
+[INFO] 2022-02-11 11:07:28,192 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-11 11:35:08,730 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-11 11:35:08,979 [main]   onTestStart - shadowDoomTest Started
+2022-02-11 11:35:24,143 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-11 11:35:24,395 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-11 11:35:40,247 [main]   onTestFailure - Failed because of - Element not found {#content > my-paragraph:nth-child(4) -> p > slot}
+Expected: exist
+Page source: file:/D:/Frameworks/MyTestFramework/build/reports/tests/1644572115798.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: Cannot locate an element p > slot in shadow roots #content > my-paragraph:nth-child(4)
+[INFO] 2022-02-11 11:35:52,434 [main]   onTestFailure - Failed because of - org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=98.0.4758.82)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DEADLOCK-PC', ip: '192.168.1.137', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7c5882b3e1b82daf654d03d566a9cce8, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\miste\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49920}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49920/devtoo..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7c5882b3e1b82daf654d03d566a9cce8
+[INFO] 2022-02-11 11:36:04,684 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 16:26:57,333 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 16:26:57,583 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 16:27:02,742 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 16:27:03,190 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 16:27:39,568 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 16:27:39,801 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 16:27:49,430 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 16:27:49,947 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 16:27:57,812 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 16:27:58,065 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 16:28:30,976 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 16:28:31,520 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 17:35:26,424 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 17:35:26,684 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 17:35:35,403 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 17:35:35,982 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 17:36:21,716 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 17:36:21,979 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 17:36:50,322 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 17:36:50,924 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 17:37:26,505 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 17:37:26,743 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 17:37:35,458 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 17:37:35,980 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 17:38:11,363 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 17:38:11,625 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 17:38:20,357 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 17:38:20,816 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 17:38:34,236 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 17:38:34,484 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 17:38:43,293 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 17:38:43,838 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 17:38:48,831 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 17:38:49,048 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 17:38:59,037 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 17:38:59,559 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 17:39:10,469 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 17:39:10,722 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 17:39:19,430 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 17:39:19,979 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 17:39:28,347 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 17:39:28,584 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 17:39:37,366 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 17:39:37,914 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 17:45:01,998 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 17:45:02,242 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 17:45:10,969 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 17:45:11,467 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 17:45:27,307 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 17:45:27,538 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 17:45:36,431 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 17:45:36,995 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 17:45:41,585 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 17:45:41,837 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 17:45:50,504 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 17:45:50,957 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 17:46:11,751 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 17:46:11,991 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 17:46:20,933 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 17:46:21,445 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 17:58:05,444 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 17:58:05,692 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 17:58:14,516 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 17:58:15,071 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 18:00:26,688 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 18:00:26,936 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 18:00:38,130 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 18:00:39,410 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 18:00:54,800 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 18:00:55,050 [main]   onTestStart - googleTest Started
+2022-02-13 18:01:22,812 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 18:01:23,048 [main]   onTestStart - googleTest Started
+2022-02-13 18:01:57,028 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 18:01:57,294 [main]   onTestStart - googleTest Started
+2022-02-13 18:02:29,105 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 18:02:29,355 [main]   onTestStart - googleTest Started
+2022-02-13 18:02:58,873 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 18:02:59,117 [main]   onTestStart - googleTest Started
+2022-02-13 18:03:26,901 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 18:03:27,136 [main]   onTestStart - googleTest Started
+2022-02-13 18:03:56,724 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 18:03:56,949 [main]   onTestStart - googleTest Started
+2022-02-13 18:04:06,751 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 18:04:07,001 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 18:04:32,240 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 18:04:32,851 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 18:33:02,390 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 18:33:02,638 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 18:33:11,419 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 18:33:11,846 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 18:34:20,030 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 18:34:20,269 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 18:34:30,098 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 18:34:30,516 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 18:41:49,698 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 18:41:49,961 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 18:41:58,925 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 18:41:59,330 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 19:24:45,831 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 19:24:46,072 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 19:24:54,845 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 19:24:55,371 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-13 19:25:06,035 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-13 19:25:06,298 [main]   onTestStart - googleTest Started
+[INFO] 2022-02-13 19:25:28,027 [main]   onTestSuccess - googleTest Passed
+[INFO] 2022-02-13 19:25:28,583 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-15 20:45:25,585 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-02-15 20:45:25,832 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2022-02-15 20:45:31,164 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2022-02-15 20:45:31,463 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-02-16 10:40:57,030 INFO  =========== Start: Tests=============== 
+[INFO] 2022-02-16 10:40:57,285 [main]   onTestStart - loginTest Started
+[INFO] 2022-02-16 10:41:01,995 [main]   onTestSuccess - loginTest Passed
+[INFO] 2022-02-16 10:41:02,212 [main]   onTestStart - deleteButtonTest Started
+[INFO] 2022-02-16 10:41:02,625 [main]   onTestSuccess - deleteButtonTest Passed
+[INFO] 2022-02-16 10:41:02,811 [main]   onTestStart - basicAuthTest Started
+[INFO] 2022-02-16 10:41:03,133 [main]   onTestSuccess - basicAuthTest Passed
+[INFO] 2022-02-16 10:41:03,320 [main]   onTestStart - dropDownTest Started
+[INFO] 2022-02-16 10:41:03,611 [main]   onTestSuccess - dropDownTest Passed
+[INFO] 2022-02-16 10:41:03,801 [main]   onTestStart - shadowDoomTest Started
+[INFO] 2022-02-16 10:41:03,985 [main]   onTestSuccess - shadowDoomTest Passed
+[INFO] 2022-02-16 10:41:04,271 [main]   onFinish - =========== Finish: Tests ===============

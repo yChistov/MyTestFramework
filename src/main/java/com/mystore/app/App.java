@@ -1,6 +1,8 @@
 package com.mystore.app;
 
-import com.mystore.app.pages.*;
+import com.mystore.app.pages.elmir.ElmirPage;
+import com.mystore.app.pages.google.GoogleHomePage;
+import com.mystore.app.pages.herokuapp.*;
 
 public class App {
     public LoginPage loginPage;
@@ -8,6 +10,8 @@ public class App {
     public BasicAuthPage basicAuthPage;
     public DropDownPage dropDownPage;
     public ShadowDomPage shadowDomPage;
+    public GoogleHomePage googleHomePage;
+    public ElmirPage elmirPage;
 
     public App() {
         loginPage = PageBuilder.buildLoginPage();
@@ -15,5 +19,7 @@ public class App {
         basicAuthPage = PageBuilder.buildBasicAuthPage();
         dropDownPage = PageBuilder.buildDropDownPage();
         shadowDomPage = PageBuilder.buildShadowDomPage();
+        googleHomePage = PageBuilder.buildGoogleHomePage();
+        elmirPage = PageBuilder.buildElmirPage();
     }
 }

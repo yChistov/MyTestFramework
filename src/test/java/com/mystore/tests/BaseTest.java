@@ -14,7 +14,7 @@ import org.testng.asserts.SoftAssert;
 
 import static com.mystore.helpers.Driver.*;
 
-public class BaseTest {
+public abstract class BaseTest {
 
     protected App app;
     protected SoftAssert softAssert;

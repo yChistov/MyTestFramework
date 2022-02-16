@@ -8,7 +8,7 @@
 
     <test name="Tests">
         <classes>
-            <class name="com.mystore.tests.MyTest" />
+            <class name="com.mystore.tests.HerokuAppTests" />
         </classes>
     </test>
 

@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 @Listeners(TestListener.class)
-public class MyTest extends BaseTest {
+public class HerokuAppTests extends BaseTest {
     private static final String WELCOME_TEXT =
             "Welcome to the Secure Area. When you are done click logout below.";
     private static final String BASIC_AUTH = "Congratulations! You must have the proper credentials.";

@@ -1,6 +1,7 @@
-package com.mystore.app.pages;
+package com.mystore.app.pages.herokuapp;
 
 import com.codeborne.selenide.SelenideElement;
+import com.mystore.app.pages.BasePage;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
