@@ -28,20 +28,20 @@ public class AWSSelenoidDriverProvider implements WebDriverProvider {
                 options.addArguments("--headless");
                 options.setExperimentalOption("prefs", prefs);
                 capabilities.setCapability("browserName", "chrome");
-                capabilities.setCapability("browserVersion", "91.0");
+                capabilities.setCapability("browserVersion", "101.0");
                 capabilities.setCapability(ChromeOptions.CAPABILITY, options);
                 break;
             case "firefox":
                 capabilities.setCapability("browserName", "firefox");
-                capabilities.setCapability("browserVersion", "89.0");
+                capabilities.setCapability("browserVersion", "100.0");
                 break;
             case "opera":
                 capabilities.setCapability("browserName", "opera");
-                capabilities.setCapability("browserVersion", "76.0");
+                capabilities.setCapability("browserVersion", "85.0");
                 break;
             default:
                 capabilities.setCapability("browserName", "chrome");
-                capabilities.setCapability("browserVersion", "90.0");
+                capabilities.setCapability("browserVersion", "101.0");
                 break;
         }
         capabilities.setCapability(
