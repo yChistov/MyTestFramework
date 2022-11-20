@@ -229,3 +229,45 @@ selenide.baseUrl: http://localhost:8080
 [INFO] 2022-06-14 14:32:31,504 [main]   onTestStart - loginTest Started
 [INFO] 2022-06-14 14:32:36,526 [main]   onTestSuccess - loginTest Passed
 [INFO] 2022-06-14 14:32:36,848 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-06-17 12:26:23,945 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-06-17 12:26:24,263 [main]   onTestStart - loginTest Started
+[INFO] 2022-06-17 12:26:29,258 [main]   onTestSuccess - loginTest Passed
+[INFO] 2022-06-17 12:26:29,574 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-06-17 12:32:49,607 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-06-17 12:32:49,875 [main]   onTestStart - loginTest Started
+[INFO] 2022-06-17 12:33:01,317 [main]   onTestFailure - Failed because of - org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'DEADLOCK-PC', ip: '192.168.1.138', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: 101.0, goog:chromeOptions: {args: [], extensions: [], prefs: {profile.default_content_setting_values.notifications: 2}}, selenoid:options: {enableVNC: true, enableVideo: true}}], desiredCapabilities=Capabilities {browserName: chrome, browserVersion: 101.0, goog:chromeOptions: {args: [], extensions: [], prefs: {profile.default_content_setting_values.notifications: 2}}, selenoid:options: {enableVNC: true, enableVideo: true}}}]
+selenide.url: http://the-internet.herokuapp.com/login
+Capabilities {}
+selenide.baseUrl: http://localhost:8080
+[INFO] 2022-06-17 12:33:01,321 [main]   onTestFailure - Failed because of - java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first.
+[INFO] 2022-06-17 12:33:01,330 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-06-17 12:33:33,661 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-06-17 12:33:33,979 [main]   onTestStart - loginTest Started
+[INFO] 2022-06-17 12:33:39,395 [main]   onTestSuccess - loginTest Passed
+[INFO] 2022-06-17 12:33:39,718 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-06-19 15:56:36,878 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-06-19 15:56:37,208 [main]   onTestStart - loginTest Started
+[INFO] 2022-06-19 15:56:44,881 [main]   onTestSuccess - loginTest Passed
+[INFO] 2022-06-19 15:56:45,224 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-06-19 15:57:43,804 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-06-19 15:57:44,138 [main]   onTestStart - googleTest Started
+2022-07-10 15:55:58,376 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-07-10 15:55:58,682 [main]   onTestStart - loginTest Started
+[INFO] 2022-07-10 15:56:04,669 [main]   onTestSuccess - loginTest Passed
+[INFO] 2022-07-10 15:56:05,031 [main]   onFinish - =========== Finish: MyTestFramework ===============
+2022-10-05 13:57:22,176 INFO  =========== Start: MyTestFramework=============== 
+[INFO] 2022-10-05 13:57:22,447 [main]   onTestStart - loginTest Started
+[INFO] 2022-10-05 13:57:33,783 [main]   onTestFailure - Failed because of - org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'DEADLOCK-PC', ip: '192.168.1.138', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: 101.0, goog:chromeOptions: {args: [], extensions: [], prefs: {profile.default_content_setting_values.notifications: 2}}, selenoid:options: {enableVNC: true, enableVideo: true}}], desiredCapabilities=Capabilities {browserName: chrome, browserVersion: 101.0, goog:chromeOptions: {args: [], extensions: [], prefs: {profile.default_content_setting_values.notifications: 2}}, selenoid:options: {enableVNC: true, enableVideo: true}}}]
+selenide.url: http://the-internet.herokuapp.com/login
+Capabilities {}
+selenide.baseUrl: http://localhost:8080
+[INFO] 2022-10-05 13:57:33,788 [main]   onTestFailure - Failed because of - java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first.
+[INFO] 2022-10-05 13:57:33,798 [main]   onFinish - =========== Finish: MyTestFramework ===============

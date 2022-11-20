@@ -27,20 +27,20 @@ public class SelenoidDriverProvider implements WebDriverProvider {
                 ChromeOptions options = new ChromeOptions();
                 options.setExperimentalOption("prefs", prefs);
                 capabilities.setCapability("browserName", "chrome");
-                capabilities.setCapability("browserVersion", "101.0");
+                capabilities.setCapability("browserVersion", "107.0");
                 capabilities.setCapability(ChromeOptions.CAPABILITY, options);
                 break;
             case "firefox":
                 capabilities.setCapability("browserName", "firefox");
-                capabilities.setCapability("browserVersion", "100.0");
+                capabilities.setCapability("browserVersion", "106.0");
                 break;
             case "opera":
                 capabilities.setCapability("browserName", "opera");
-                capabilities.setCapability("browserVersion", "85.0");
+                capabilities.setCapability("browserVersion", "93.0");
                 break;
             default:
                 capabilities.setCapability("browserName", "chrome");
-                capabilities.setCapability("browserVersion", "101.0");
+                capabilities.setCapability("browserVersion", "107.0");
                 break;
         }
         capabilities.setCapability(
@@ -49,7 +49,7 @@ public class SelenoidDriverProvider implements WebDriverProvider {
                         "enableVNC", true,
                         "enableVideo", true));
         try {
-            return new RemoteWebDriver(new URL("http://172.19.16.1:4444/wd/hub"), capabilities);
+            return new RemoteWebDriver(new URL("http://172.21.240.1:4444/wd/hub"), capabilities);
         } catch (final MalformedURLException e) {
             throw new RuntimeException("Unable to create driver", e);
         }
