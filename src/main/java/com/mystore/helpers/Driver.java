@@ -17,6 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Objects;
 
 import static com.codeborne.selenide.Selenide.$;
 
@@ -24,7 +25,6 @@ public class Driver {
 
     public static void initDriver() {
         TestConfig.initConfig();
-        Configuration.driverManagerEnabled = false;
         Configuration.pageLoadStrategy = "eager";
         Configuration.holdBrowserOpen = false;
         Configuration.screenshots = false;
@@ -128,7 +128,7 @@ public class Driver {
 
     public static SelenideElement expandRootElement(SelenideElement element) {
         WebElement rootElement = Selenide.executeJavaScript("return arguments[0].shadowRoot", element);
-        return $(rootElement);
+        return $(Objects.requireNonNull(rootElement));
     }
 
     public static WebElement expandElement(WebElement element) {

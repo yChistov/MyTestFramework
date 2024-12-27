@@ -8,7 +8,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-import javax.annotation.Nonnull;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
@@ -16,9 +15,8 @@ import java.util.Map;
 
 public class AWSSelenoidDriverProvider implements WebDriverProvider {
 
-    @Nonnull
     @Override
-    public WebDriver createDriver(@Nonnull Capabilities desiredCapabilities) {
+    public WebDriver createDriver(Capabilities desiredCapabilities) {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         Map<String, Object> prefs = new HashMap<>();
         switch (TestConfig.browser) {
@@ -28,20 +26,20 @@ public class AWSSelenoidDriverProvider implements WebDriverProvider {
                 options.addArguments("--headless");
                 options.setExperimentalOption("prefs", prefs);
                 capabilities.setCapability("browserName", "chrome");
-                capabilities.setCapability("browserVersion", "101.0");
+                capabilities.setCapability("browserVersion", "128.0");
                 capabilities.setCapability(ChromeOptions.CAPABILITY, options);
                 break;
             case "firefox":
                 capabilities.setCapability("browserName", "firefox");
-                capabilities.setCapability("browserVersion", "100.0");
+                capabilities.setCapability("browserVersion", "125.0");
                 break;
-            case "opera":
+            case "edge":
                 capabilities.setCapability("browserName", "opera");
-                capabilities.setCapability("browserVersion", "85.0");
+                capabilities.setCapability("browserVersion", "109.0");
                 break;
             default:
                 capabilities.setCapability("browserName", "chrome");
-                capabilities.setCapability("browserVersion", "101.0");
+                capabilities.setCapability("browserVersion", "128.0");
                 break;
         }
         capabilities.setCapability(
@@ -50,7 +48,7 @@ public class AWSSelenoidDriverProvider implements WebDriverProvider {
                         "enableVNC", true,
                         "enableVideo", true));
         try {
-            return new RemoteWebDriver(new URL("http://18.207.245.176:4444/wd/hub"), capabilities);
+            return new RemoteWebDriver(new URL("http://172.25.16.1:4444/wd/hub"), capabilities);
         } catch (final MalformedURLException e) {
             throw new RuntimeException("Unable to create driver", e);
         }
