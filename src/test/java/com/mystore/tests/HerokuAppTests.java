@@ -11,8 +11,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 @Listeners(TestListener.class)
 public class HerokuAppTests extends BaseTest {
-    private static final String WELCOME_TEXT =
-            "Welcome to the Secure Area. When you are done click logout below.";
+    private static final String WELCOME_TEXT = "Welcome to the Secure Area. When you are done click logout below.";
     private static final String BASIC_AUTH = "Congratulations! You must have the proper credentials.";
     private static final String VALUE_OPTION = "Option 1";
     private static final int NUMBER_OF_BUTTON_CLICKS = 5;
@@ -24,7 +23,8 @@ public class HerokuAppTests extends BaseTest {
     public void loginTest() {
         app.loginPage.open();
         app.loginPage.login("tomsmith", "SuperSecretPassword!");
-        assertThat("Welcome text is: " + app.loginPage.getWelcomeText(), app.loginPage.getWelcomeText().equals(WELCOME_TEXT));
+        assertThat("Welcome text is: " + app.loginPage.getWelcomeText(),
+                app.loginPage.getWelcomeText().equals(WELCOME_TEXT));
     }
 
     @Step
@@ -42,7 +42,8 @@ public class HerokuAppTests extends BaseTest {
     @Description(value = "Login with correct credentials into url")
     public void basicAuthTest() {
         app.basicAuthPage.open("admin", "admin");
-        assertThat("Title is: " + app.basicAuthPage.getBasicAuth(), app.basicAuthPage.getBasicAuth().equals(BASIC_AUTH));
+        assertThat("Title is: " + app.basicAuthPage.getBasicAuth(),
+                app.basicAuthPage.getBasicAuth().equals(BASIC_AUTH));
     }
 
     @Step
@@ -51,7 +52,8 @@ public class HerokuAppTests extends BaseTest {
     public void dropDownTest() {
         app.dropDownPage.open();
         app.dropDownPage.selectOptionByValue(VALUE_OPTION);
-        assertThat("Option is: " + app.dropDownPage.getText(), app.dropDownPage.getText().equals(VALUE_OPTION));
+        assertThat("Option is: " + app.dropDownPage.getText(),
+                app.dropDownPage.getText().equals(VALUE_OPTION));
     }
 
     @Step
@@ -59,6 +61,7 @@ public class HerokuAppTests extends BaseTest {
     @Description(value = "Shadow DOM check")
     public void shadowDoomTest() {
         app.shadowDomPage.open();
-        assertThat("Page text is: " + app.shadowDomPage.getText(), app.shadowDomPage.getText().equals(SOME_TEXT));
+        assertThat("Page text is: " + app.shadowDomPage.getText(),
+                app.shadowDomPage.getText().equals(SOME_TEXT));
     }
 }

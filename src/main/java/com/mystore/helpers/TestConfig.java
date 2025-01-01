@@ -8,8 +8,7 @@ public class TestConfig {
     public static void initConfig() {
         browser = System.getProperty("browser") == null ? "chrome" : System.getProperty("browser");
         headless = System.getProperty("headless") == null ? "0" : System.getProperty("headless");
-        environment =
-                System.getProperty("environment") == null ? "local" : System.getProperty("environment");
+        environment = System.getProperty("environment") == null ? "local" : System.getProperty("environment");
     }
 
     public static boolean isHeadless() {

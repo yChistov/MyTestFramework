@@ -23,6 +23,8 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class Driver {
 
+    static String shadowLocator = "return arguments[0].shadowRoot";
+
     public static void initDriver() {
         TestConfig.initConfig();
         Configuration.pageLoadStrategy = "eager";
@@ -70,7 +72,7 @@ public class Driver {
 
     public static void waitForUrlDoesNotContain(String urlChunk) {
         int maxTime = 20;
-        while (currentDriver().getCurrentUrl().contains(urlChunk) && maxTime > 0) {
+        while (Objects.requireNonNull(currentDriver().getCurrentUrl()).contains(urlChunk) && maxTime > 0) {
             wait(1);
             maxTime--;
         }
@@ -127,13 +129,13 @@ public class Driver {
     }
 
     public static SelenideElement expandRootElement(SelenideElement element) {
-        WebElement rootElement = Selenide.executeJavaScript("return arguments[0].shadowRoot", element);
+        WebElement rootElement = Selenide.executeJavaScript(shadowLocator, element);
         return $(Objects.requireNonNull(rootElement));
     }
 
     public static WebElement expandElement(WebElement element) {
         return (WebElement)
                 ((JavascriptExecutor) currentDriver())
-                        .executeScript("return arguments[0].shadowRoot", element);
+                        .executeScript(shadowLocator, element);
     }
 }

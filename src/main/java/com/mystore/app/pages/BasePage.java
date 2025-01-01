@@ -24,9 +24,9 @@ public abstract class BasePage {
   public void open(String username, String password) {
     String auth = username + ":" + password + "@";
     String authUrl =
-        "http://"
+        "https://"
             + auth
-            + Trim.ltrim(AppConfig.baseUrl, "http://")
+            + Trim.ltrim(AppConfig.baseUrl, "https://")
             + "/"
             + Trim.ltrim(pageUrl, "/");
     Selenide.open(authUrl);

@@ -5,9 +5,6 @@ import com.mystore.helpers.TestConfig;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class LocalDriverProvider implements WebDriverProvider {
 
@@ -18,16 +15,13 @@ public class LocalDriverProvider implements WebDriverProvider {
 
         switch (TestConfig.browser) {
             case "chrome":
-                WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
+                driver = WebDriverManager.chromedriver().create();
                 break;
             case "firefox":
-                WebDriverManager.firefoxdriver().setup();
-                driver = new FirefoxDriver();
+                driver = WebDriverManager.firefoxdriver().create();
                 break;
             case "opera":
-                WebDriverManager.operadriver().setup();
-                driver = new ChromeDriver();
+                driver =WebDriverManager.operadriver().create();
                 break;
         }
         return driver;
