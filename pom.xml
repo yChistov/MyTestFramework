@@ -11,7 +11,7 @@
     <properties>
         <maven.compiler.release>11</maven.compiler.release>
         <maven.compiler.plugin>LATEST</maven.compiler.plugin>
-        <maven.surefire.plugin>LATEST</maven.surefire.plugin>
+        <maven.surefire.plugin>3.5.2</maven.surefire.plugin>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <aspectj.version>1.9.22.1</aspectj.version>
